@@ -1,0 +1,97 @@
+/* src/components/Home.css */
+
+.home-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.search-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto 20px; /* Ajuste para centralizar verticalmente e adicionar margem inferior */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.books-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjusted gap for better spacing */
+  justify-content: center;
+}
+
+.book-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: calc(12.5% - 10px); /* 12.5% width to fit 8 items per row */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.book-image {
+  width: 100%;
+  height: 200px; /* Definindo uma altura fixa para as imagens */
+  object-fit: cover; /* Garante que a imagem preencha o espaço mantendo a proporção */
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+.book-info {
+  padding: 10px; /* Adjusted padding for better fit */
+  text-align: center;
+}
+
+.book-info h3 {
+  margin: 10px 0;
+  font-size: 1.1rem; /* Slightly smaller font for better fit */
+  color: #333;
+}
+
+.book-info p {
+  margin: 5px 0;
+  font-size: 0.9rem; /* Slightly smaller font for better fit */
+  color: #666;
+}
+
+.not-available {
+  background-color: rgb(255, 157, 157);
+}
+
+
+@media (max-width: 1200px) {
+  .book-card {
+      width: calc(16.66% - 10px); /* 6 items per row for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .book-card {
+      width: calc(25% - 10px); /* 4 items per row for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .book-card {
+      width: calc(50% - 10px); /* 2 items per row for mobile screens */
+  }
+}

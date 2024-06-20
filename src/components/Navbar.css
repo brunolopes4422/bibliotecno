@@ -1,0 +1,107 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  background-color: #003366; /* Government blue color */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  position: relative; /* For positioning the hamburger menu */
+}
+
+.navbar-brand {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #002244; /* Darker blue for hover */
+  color: #cccccc; /* Light grey for hover */
+}
+
+.logout-btn {
+  background-color: #d9534f; /* Bootstrap red */
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c9302c; /* Darker red for hover */
+  color: #ffffff;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0.5rem;
+  border: none;
+  background: none;
+}
+
+.hamburger span {
+  background: #ffffff;
+  height: 2px;
+  width: 25px;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      display: none; /* Hide the nav initially */
+      gap: 0;
+  }
+
+  .navbar-nav.active {
+      display: flex; /* Show the nav when active */
+  }
+
+  .hamburger {
+      display: flex;
+  }
+
+  .nav-link, .logout-btn {
+      padding: 1rem;
+      width: 100%;
+      text-align: center;
+  }
+
+  .nav-link:hover {
+      background-color: #002244;
+      color: #cccccc;
+  }
+}

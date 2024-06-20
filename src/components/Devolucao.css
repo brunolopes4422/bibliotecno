@@ -1,0 +1,44 @@
+/* Devolucao.css */
+
+.devolucao-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .devolucao-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Ajustando o tamanho do campo de pesquisa */
+  .select-container {
+    width: 100%;
+    max-width: 500px; /* Defina o tamanho máximo do campo de pesquisa */
+  }
+  
+  /* Estilo para o componente Select */
+  .react-select-container {
+    width: 550px; /* Faz com que o componente Select ocupe todo o espaço disponível */
+  }
+  
+  /* Estilo para o botão de submit */
+  button[type="submit"] {
+    margin-top: 10px; /* Adiciona um espaço entre o campo de pesquisa e o botão */
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #002244;
+  }
+  

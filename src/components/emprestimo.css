@@ -1,0 +1,122 @@
+/* src/components/Emprestimo.css */
+
+.emprestimo-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003366;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  select,
+  input[type="date"],
+  button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  select {
+    appearance: none; /* Remove default appearance */
+    background-color: #fff; /* Set background color */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M5.646 8.854a.5.5 0 01-.708 0l-4-4a.5.5 0 11.708-.708L6 7.293l3.646-3.647a.5.5 0 11.708.708l-4 4z"></path></svg>'); /* Set arrow icon */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px; /* Adjust padding for arrow icon */
+  }
+  
+  select option {
+    padding: 10px;
+  }
+  
+  button {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #002244;
+  }
+
+  .dropdown {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  .dropdown li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .dropdown li:hover {
+    background-color: #eee;
+  }
+  
+/*nota de emprestimo*/
+
+.nota-emprestimo {
+  font-family: Arial, sans-serif;
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+.print-section {
+  display: none;
+}
+
+@media print {
+  .print-section {
+    display: block;
+  }
+}
+  /* Loading animation */
+  @keyframes spinner {
+    to { transform: rotate(360deg); }
+  }
+  
+  .loading::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #003366;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spinner 0.6s linear infinite;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+  
