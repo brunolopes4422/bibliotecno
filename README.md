@@ -1,4 +1,4 @@
-Descrição para GitHub - Biblioteca Virtual
+Descrição - Biblioteca Virtual
 Visão Geral
 Este repositório contém uma aplicação web de uma Biblioteca Virtual desenvolvida utilizando React para o frontend e Firebase Firestore para o backend. A aplicação permite gerenciar livros, alunos, empréstimos, e relatórios relacionados.
 
